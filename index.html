@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inferno Games</title>
+    <link rel="shortcut icon" type="image/png" href="logo.png" head="">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div id = "navbar__logo">
+          <a href="/index.html" id="navbar__logo"><img src = "logo.png" width="100" height="100"></a>
+          <a href="/index.html" id="navbar__logo">Inferno Games</a>
+        </div>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/index.html#home" class="navbar__links" id="home-page">HOME</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/index.html#services" class="navbar__links" id="about-page">GAMES</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/index.html#services" class="navbar__links" id="services-page"
+              >NEWS</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="/sign-up.html" class="button" id="signup">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <div class="slide first">
+          <img src="slide1.png" alt="">
+          <!-- <div class="news-head"><b>Site's development is going well... for now!</b></div> -->
+          <!-- <div class="news-text">So far, the site is doing well and will be put online once we start rolling out early beta versions of Kinter 2.</div> -->
+        </div>
+        <div class="slide second">
+          <img src="slide2.png" alt="">
+        </div>
+        <div class="slide third">
+          <img src="slide3.png" alt="">
+        </div>
+        <div class="slide fourth">
+          <img src="slide4.png" alt="">
+        </div>
+
+        <div class="nav-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+      <div class="nav-manual">
+        <label for="radio1" class="nav-btn"></label>
+        <label for="radio2" class="nav-btn"></label>
+        <label for="radio3" class="nav-btn"></label>
+        <label for="radio4" class="nav-btn"></label>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <h1>FEATURED GAMES</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Kinter 2</h2>
+          <p>The second entry of Kinter is one of the first major next-gen platforming open-world games. This 2D platformer follows the story of Kinter himself who is trying to find a way out of the simulation that he had been trapped by the Yoz Magician.</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Kinter Classic</h2>
+          <p>The original... follow Kinter's adventures in this traditional 2D platformer and see how it started it all.</p>
+          <div class="services__btn"><button onclick="window.location.href='/kinter-classic.html'">Get Started</button></div>
+        </div>
+        <div class="services__card">
+          <h2>InfoSMP</h2>
+          <p>Overmodded family-friendly Minecraft Survival Multiplayer Server with stunning architecture.</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Infinite Choices</h2>
+          <p>1000's of colors</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services" id="services">
+      <h1>NEWS & STORIES</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Kinter 2 announcement date revealed</h2>
+          <p>Kinter 2</p>
+          <div class="services__btn"><button>Read More</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Download and play all the latest Inferno Games PC titles.</h2>
+          <p>Inferno Games Launcher</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Full Gradients</h2>
+          <p>100 Combinations</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Infinite Choices</h2>
+          <p>1000's of colors</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Infinite Choices</h2>
+          <p>1000's of colors</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Infinite Choices</h2>
+          <p>1000's of colors</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div> 
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Join Our Team</h1>
+          <h2>Inferno Games Launcher</h2>
+          <p>Everything Inferno in one place!</p>
+          <button class="main__btn"><a href="#">DOWNLOAD</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+            <a href="/">Careers</a> <a href="/">Terms of Service</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="contact_us.html">Contact</a> <a href="/">Support</a>
+            <a href="/">Destinations</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+            <a href="/">Agency</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Facebook</a> <a href="/">Instagram</a>
+            <a href="https://www.youtube.com/channel/UCUsQjrcKMV1p97Fly8pqv9g">Youtube</a> <a href="/">Discord</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">Inferno Games</a>
+          </div>
+          <p class="website__rights">© Inferno Games 2021. All rights reserved</p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/channel/UCUsQjrcKMV1p97Fly8pqv9g" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://discord.gg/qFsqUuATkj" class="social__icon--link"
+              ><i class="fab fa-discord"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <script src="main.js"></script>
+  </body>
+</html>

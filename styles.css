@@ -242,6 +242,10 @@
 
   .slide img{
     width: 100%;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
   }
   
   .nav-manual{

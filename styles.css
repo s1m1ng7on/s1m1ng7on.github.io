@@ -597,10 +597,14 @@
   }
 
   .services__card:nth-child(1){
+    background-image: url("images.png");
+  }
+
+  .services__card:nth-child(2){
     background-image: url("kinter2.png");
   }
   
-  .services__card:nth-child(2) {
+  .services__card:nth-child(3) {
     background-image: url("kinter.png");
   }
   

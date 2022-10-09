@@ -28,6 +28,124 @@
     margin: 0 auto;
     padding: 0 50px;
   }
+
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .container {
+    background: #131313;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 3rem 0;
+}
+
+.container .login-text {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.container .login-social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    margin-bottom: 25px;
+}
+
+.container .login-social a {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+    transition: .3s;
+}
+
+.container .login-email .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.container .login-email .input-group input {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+
+.container .login-email .input-group input:focus, .container .login-email .input-group input:valid {
+    border-color: #bc1414;
+}
+
+.container .login-email .input-group .btn {
+    display: inline-block;
+    width: 45%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #bc1414;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+    margin-right: 5px;
+}
+
+.container .login-email .input-group .btn:nth-child(2) {
+  background: #ffffff;
+}
+
+.container .login-email .input-group .btn:hover {
+    transform: translateY(-5px);
+    background: #7d0000;
+}
+
+.login-register-text {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.login-register-text a {
+    text-decoration: none;
+    color: #6c5ce7;
+}
+
+#checkbox
+{
+  position: relative;
+  height: 24px;
+  width: 24px;
+  left:94%;
+  bottom:75%;
+}
+
+#checkbox:hover
+{
+  cursor:pointer;
+}
   
   #navbar__logo {
     background-color: #ffffff;

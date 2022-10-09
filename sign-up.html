@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Sign In</title>
     <link rel="shortcut icon" type="image/png" href="logo.png" head="">
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -15,36 +15,26 @@
     />
 </head>
 <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <div id = "navbar__logo">
-              <a href="/index.html" id="navbar__logo"><img src = "logo.png" width="100" height="100"></a>
-              <a href="/index.html" id="navbar__logo">Inferno Games</a>
-            </div>
-            <div class="navbar__toggle" id="mobile-menu">
-              <span class="bar"></span> <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-              <li class="navbar__item">
-                <a href="/index.html#home" class="navbar__links" id="home-page">HOME</a>
-              </li>
-              <li class="navbar__item">
-                <a href="/index.html#services" class="navbar__links" id="about-page">GAMES</a>
-              </li>
-              <li class="navbar__item">
-                <a href="/index.html#services" class="navbar__links" id="services-page"
-                  >NEWS</a
-                >
-              </li>
-              <li class="navbar__btn">
-                <a href="/sign-up.html" class="button" id="signup">Sign Up</a>
-              </li>
-            </ul>
-          </div>
-    </nav>
-
-
+  <div class="container">
+    <div class="vertical-center">
+      <form action="connect.php" method="POST" class="login-email">
+        <p class="login-text" style="font-size: 2rem; font-weight: 800;">Please enter your Inferno Games login credentials</p>
+        <div class="input-group">
+          <input type="email" placeholder="Email" name="email" value="" required>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Password" name="password" id="password" value="" required>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABcUlEQVRIie2Uz0pCURCH54Y7JSva5UVI6NKqNxBp1yO0rh6iRb2Lq1AEN6EgBJJtXCTUwo1JL2CCSrX82vyC0/H6J4jcOHDgMt9v5pwzc8+YrW3VFsyDwI6ZnZrZiZkdmdmu0MDMnsysbmY3QRAMf7UrkAAugQmLbSJtYtnkGaDtJGgAZ0AEJLUi+RqOrg1kFiXPAn0FvAD5JQ6UB3qK6QPZWcIU0JXwHthyWAhUgLFWFYgcngaaiu0CqbgNihJ0XIGSv8XUfgiE3gE7YkU/eUHgA8h5rCJ2C+ypRzX5yp42pxwABRe05LyOudlYLOP4QvlGMforsZaZ2YbPp2o33+L0fs4fJXoH9j1WFaupPCFQl6/kaQ+Az6kSCX43+RFIOv5IDfVt4JVtE3iObbIE7m/aBNIOC4EyMNIqecm3gQfFxv+mEroPrcdyD+0YeFXM7IfmBMSNinPgULdM6fsCuHN0i0eFs8mfDbvVjOu1/at9AcCUuojo31OaAAAAAElFTkSuQmCC" id="checkbox" onclick="showPassword()"/>
+        </div>
+        <div class="input-group">
+          <button name="login" class="btn"><b>SIGN IN</b></button>
+        </div>
+        <div class="input-group">
+          <button name="register" class="btn"><b>REGISTER</b></button>
+        </div>
+      </form>
+    </div>
+	</div>
+  <script src="main.js"></script>
 </body>
 </html>
